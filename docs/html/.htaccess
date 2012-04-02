@@ -1,0 +1,3 @@
+AuthName "Restricted Area"
+AuthUserFile C:/inetpub/wwwroot/SevenSkiesDev/docs/.htooriugyjfezw
+Require valid-user

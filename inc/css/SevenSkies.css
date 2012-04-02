@@ -1,0 +1,847 @@
+@CHARSET "ISO-8859-1";
+
+/* Register CSS */
+.fail { width:85%; border:1px dotted red; padding:10xp; }
+.win { width:85%; border:1px dotted green; padding:10px; }
+
+/* Perso */
+
+body {
+	background-color: #06F;
+	background-image: url(./../../images/BGWisdom.jpg);
+	background-repeat: no-repeat;
+	margin: 0;
+	background-attachment:fixed; 
+	font-family:Tahoma;
+	font-size:11px;
+	color:#696969;
+}
+
+.sholder 
+{
+    align:center;
+    margin-top:15px;
+}
+.fleft 
+{
+    float:left;
+}
+
+#regitable td { vertical-align: center; text-align:center; }
+
+.fmid
+{
+    text-align:center;
+    float:none;
+}
+
+.fpage {
+    padding-bottom:10px;
+    font-size:14px;
+    font-family: Verdana;
+}
+.fpage a {
+    text-decoration: none;
+    color:#696969;
+}
+.fpage a:visited {
+    text-decoration: none;
+    color:#696969;
+}
+.fpage a:hover {
+    color:red;
+    text-decoration: underline;
+}
+.fright
+{
+    float:right;
+}
+#footer {
+    margin-top:9px;
+    margin-left:10px;
+    margin-right:10px;
+}
+img{
+    border-style: none
+}
+#slider img {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:595px;
+        height:230px;
+        display:none;
+}
+
+.menu a {
+    color:#696969;
+    text-decoration: none;
+    font-size:15px;
+}
+
+.menu a:visited {
+    color:#696969;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    padding-left:10px;
+}
+#slider a {
+        border:0;
+        display:block;
+}
+#news-jq {
+	height:23px;
+	color:black;
+	padding-left:7px;
+	padding-right:12px;
+	padding-bottom:12px;
+	padding-top:45px;
+	word-wrap : break-word;
+}
+
+.mcontainer {
+	width:100%;
+	padding-left:8px;
+	text-align:left;
+	margin-top:15px;
+}
+
+
+.sEbox {
+    border-color: transparent; 
+    border: none;  
+    width: 163px;  
+    height: 16px;
+    background:transparent; 
+	color:#696969;
+	
+}
+div.eBox {
+	background-image:url(./../../images/Editbox.png);
+	background-repeat:no-repeat;
+	padding-left:2px;
+	padding-top:6px;
+	width:173px;
+	height:30px;
+}
+
+/* Dynamic Pages */
+div.mainContent {
+	position:absolute;
+	left:302px;
+	top:439px;
+	background-image:url(./../../images/wrapContent.png);
+	background-repeat:repeat-y;
+	width:609px;
+	height:597px;
+        word-wrap:break-word;
+}
+
+div.content {
+    overflow:auto;
+    padding-left:10px;
+    margin-right:40px;
+    width:97%;
+    height:99%;
+}
+
+div.headerContent {
+	position:absolute;
+	left:302px;
+	top:390px;
+	width:609px;
+	height:49px;
+	background-image:url(./../../images/hRegister.png);
+	background-repeat:no-repeat;
+}
+
+div.downHeader {
+	position:absolute;
+	left:302px;
+	top:390px;
+	width:609px;
+	height:49px;
+	background-image:url(./../../images/hDownloads.png);
+	background-repeat:no-repeat;
+}
+
+div.ucpHeader {
+	position:absolute;
+	left:302px;
+	top:390px;
+	width:609px;
+	height:49px;
+	background-image:url(./../../images/ucphead.png);
+	background-repeat:no-repeat;
+}
+
+div.rankHeader {
+	position:absolute;
+	left:302px;
+	top:390px;
+	width:609px;
+	height:49px;
+	background-image:url(./../../images/rankhead.png);
+	background-repeat:no-repeat;
+}
+
+div.botmenu {
+        border-bottom:dotted black 1px; 
+        margin-right:10px;
+        font-size:12px;   
+}
+
+div.botmenu:hover {
+        border-bottom:solid red 1px;
+}
+
+div.footerContent {
+	position:absolute;
+	left:302px;
+	top:1036px;
+	width:609px;
+	height:12px;
+	background-image:url(./../../images/footerContent.png);
+	background-repeat:no-repeat;
+}
+/* End Dynamic Pages */
+
+/* End Perso */
+
+/* Twitter CSS jQuery */
+
+#twitted {
+	width:100%;
+	font-family:Tahoma,Arial;
+	font-size:11px;
+	color:#696969;
+}
+
+.twitted {
+	width: 16em;
+	margin-bottom: 1.5em;
+	border: none;
+}
+
+.twitted h2 {
+	margin: 0;
+	padding: 0.3em 0.8em;
+	font-size: 1em;
+	color: #fff;
+	background-color: #888;
+}
+
+.twitted p.preLoader {
+	margin: 0;
+	padding: 1em 1em 1em 3em;
+	background: transparent url("loader.gif") 1em center no-repeat;
+}
+
+.twitted ul#twitter_update_list {
+	margin: 0;
+	padding: 0 0.8em;
+	list-style-type: none;
+}
+
+.twitted ul#twitter_update_list li {
+	margin: 0;
+	padding: 0.8em 0 1em 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.twitted ul#twitter_update_list li span {
+	/* tweet content */
+	display: block;
+}
+
+.twitted ul#twitter_update_list li span a {
+	/* links in tweet content */
+	color: #00f;
+}
+
+.twitted ul#twitter_update_list li a {
+	/* timestamp link */
+	color: #f00;
+}
+
+.twitted ul#twitter_update_list li.firstTweet {
+}
+
+.twitted ul#twitter_update_list li.lastTweet {
+	border-bottom: none;
+}
+
+.twitted p.profileLink {
+	display: block;
+	margin: 0;
+	padding: 0.3em 1em;
+	color: #fff;
+	background-color: #ddd;
+}
+
+/* Twitter jQuery End */
+
+/* Table Style */
+
+table, th, td {
+	/* border: 0x solid #D4E0EE;*/
+	border: none;
+	/*border-collapse: collapse; */
+	font-family: "Verdana", Arial, sans-serif;
+	color: #555;
+}
+
+caption {
+	font-size: 150%;
+	font-weight: bold;
+	margin: 5px;
+}
+
+td, th {
+	padding: 4px;
+}
+
+thead th {
+	text-align: center;
+	background: #E6EDF5;
+	color: #4F76A3;
+	font-size: 100% !important;
+}
+
+tbody th {
+	font-weight: bold;
+}
+
+tbody tr { background: #FCFDFE; }
+
+tbody tr.odd { background: #F7F9FC; }
+
+table a:link {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+table a:visited {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+table a:hover {
+	color: #718ABE;
+	text-decoration: underline !important;
+}
+
+tfoot th, tfoot td {
+	font-size: 85%;
+}
+
+/* End table style */
+
+div.Table_01 {
+	position:relative;
+	left:0px;
+	margin:0 auto;
+	top:0px;
+	width:1243px;
+	height:1100px;
+}
+
+div.Slice_ {
+	top:0px;
+	height:42px;
+	background-image: url(./../../images/Slice.png);
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 42px;
+}
+
+div.Slice002_ {
+	position:absolute;
+	left:0px;
+	top:42px;
+	width:1243px;
+	height:43px;
+}
+
+div.Slice003_ {
+	position:absolute;
+	left:0px;
+	top:85px;
+	width:453px;
+	height:239px;
+}
+
+div.Slice004_ {
+	position:absolute;
+	left:453px;
+	top:85px;
+	width:349px;
+	height:190px;
+}
+
+div.Slice005_ {
+	position:absolute;
+	left:802px;
+	top:85px;
+	width:441px;
+	height:239px;
+}
+
+div.Slice006_ {
+	position:absolute;
+	left:453px;
+	top:275px;
+	width:349px;
+	height:49px;
+}
+
+div.Slice007_ {
+	position:absolute;
+	left:0px;
+	top:324px;
+	width:104px;
+	height:776px;
+}
+
+div.Slice008_ {
+	position:absolute;
+	left:104px;
+	top:324px;
+	width:92px;
+	height:50px;
+}
+
+div.Slice009_ {
+	position:absolute;
+	left:196px;
+	top:324px;
+	width:1px;
+	height:51px;
+}
+
+div.Slice010_ {
+	position:absolute;
+	left:197px;
+	top:324px;
+	width:98px;
+	height:51px;
+}
+
+div.Slice011_ {
+	position:absolute;
+	left:295px;
+	top:324px;
+	width:120px;
+	height:51px;
+}
+
+div.Slice012_ {
+	position:absolute;
+	left:415px;
+	top:324px;
+	width:120px;
+	height:50px;
+}
+
+div.Slice013_ {
+	position:absolute;
+	left:535px;
+	top:324px;
+	width:154px;
+	height:51px;
+}
+
+div.Slice014_ {
+	position:absolute;
+	left:689px;
+	top:324px;
+	width:131px;
+	height:51px;
+}
+
+div.Slice015_ {
+	position:absolute;
+	left:820px;
+	top:324px;
+	width:1px;
+	height:51px;
+}
+
+div.Slice016_ {
+	position:absolute;
+	left:821px;
+	top:324px;
+	width:92px;
+	height:51px;
+}
+
+div.Slice017_ {
+	position:absolute;
+	left:913px;
+	top:324px;
+	width:97px;
+	height:51px;
+}
+
+div.Slice018_ {
+	position:absolute;
+	left:1010px;
+	top:324px;
+	width:96px;
+	height:51px;
+}
+
+div.Slice019_ {
+	position:absolute;
+	left:1106px;
+	top:324px;
+	width:137px;
+	height:776px;
+}
+
+div.Slice020_ {
+	position:absolute;
+	left:104px;
+	top:374px;
+	width:92px;
+	height:1px;
+}
+
+div.Slice021_ {
+	position:absolute;
+	left:415px;
+	top:374px;
+	width:120px;
+	height:1px;
+}
+
+div.Slice022_ {
+	position:absolute;
+	left:104px;
+	top:375px;
+	width:1002px;
+	height:15px;
+}
+
+div.Slice023_ {
+	position:absolute;
+	left:104px;
+	top:390px;
+	width:198px;
+	height:2px;
+}
+
+div.Slice024_ {
+	position:absolute;
+	left:302px;
+	top:390px;
+	width:609px;
+	height:244px;
+	padding-left:5px;
+	padding-top:10px;
+	background-image: url(./../../images/Slice-24.png);
+	background-repeat:no-repeat;
+}
+/* 594 x 235 */
+
+div.Slice025_ {
+	position:absolute;
+	left:911px;
+	top:390px;
+	width:195px;
+	height:2px;
+}
+
+div.Slice026_ {
+	position:absolute;
+	left:104px;
+	top:392px;
+	width:198px;
+	height:8px;
+}
+
+div.Slice027_ {
+	position:absolute;
+	left:911px;
+	top:392px;
+	width:195px;
+	height:6px;
+}
+
+div.Slice028_ {
+	position:absolute;
+	left:911px;
+	top:398px;
+	width:5px;
+	height:656px;
+}
+
+div.Slice029_ {
+	position:absolute;
+	left:916px;
+	top:398px;
+	width:190px;
+	height:47px;
+}
+
+div.Slice030_ {
+	position:absolute;
+	left:104px;
+	top:400px;
+	width:191px;
+	height:35px;
+}
+
+div.Slice031_ {
+	position:absolute;
+	left:295px;
+	top:400px;
+	width:7px;
+	height:654px;
+}
+
+div.Slice032_ {
+	position:absolute;
+	left:104px;
+	top:435px;
+	width:189px;
+	height:172px;
+        background-image:url(./../../images/Slice-32.png);
+        background-repeat:no-repeat;
+}
+
+div.Slice033_ {
+	position:absolute;
+	left:293px;
+	top:435px;
+	width:2px;
+	height:218px;
+}
+
+div.Slice034_ {
+	position:absolute;
+	left:916px;
+	top:445px;
+	width:190px;
+	height:4px;
+}
+
+div.Slice035_ {
+	position:absolute;
+	left:104px;
+	top:448px;
+	width:8px;
+	height:159px;
+}
+
+div.Slice037_ {
+	position:absolute;
+	left:285px;
+	top:448px;
+	width:8px;
+	height:82px;
+}
+
+div.Slice038_ {
+	position:absolute;
+	left:916px;
+	top:449px;
+	width:1px;
+	height:35px;
+}
+
+div.Slice039_ {
+	position:absolute;
+	left:917px;
+	top:449px;
+	width:189px;
+	height:35px;
+}
+
+div.Slice041_ {
+	position:absolute;
+	left:916px;
+	top:484px;
+	width:190px;
+	height:245px;
+        background-image:url(./../../images/Slice-41.png);
+        background-repeat:no-repeat;
+}
+
+
+div.Slice043_ {
+	position:absolute;
+	left:289px;
+	top:530px;
+	width:4px;
+	height:77px;
+}
+
+div.Slice045_ {
+	position:absolute;
+	left:104px;
+	top:607px;
+	width:189px;
+	height:10px;
+}
+
+div.Slice046_ {
+	position:absolute;
+	left:104px;
+	top:617px;
+	width:189px;
+	height:37px;
+}
+
+div.Slice047_ {
+	position:absolute;
+	left:302px;
+	top:634px;
+	width:609px;
+	height:273px;
+	background-image:url(./../../images/Slice-47.png);
+	background-repeat:no-repeat;
+}
+
+div.Slice048_ {
+	position:absolute;
+	left:293px;
+	top:653px;
+	width:1px;
+	height:185px;
+}
+
+div.Slice049_ {
+	position:absolute;
+	left:294px;
+	top:653px;
+	width:1px;
+	height:401px;
+}
+
+div.Slice050_ {
+	position:absolute;
+	left:104px;
+	top:654px;
+	width:189px;
+	height:184px;
+        background-image:url('./../../images/Slice-50.png');
+        background-repeat:no-repeat;
+}
+
+div.Slice051_ {
+	position:absolute;
+	left:916px;
+	top:729px;
+	width:1px;
+	height:325px;
+}
+
+div.Slice052_ {
+	position:absolute;
+	left:917px;
+	top:729px;
+	width:189px;
+	height:43px;
+}
+
+div.Slice053_ {
+	position:absolute;
+	left:917px;
+	top:772px;
+	width:189px;
+	height:271px;
+        background-image:url(./../../images/Slice-53.png);
+        background-repeat:no-repeat;
+}
+
+div.Slice054_ {
+	position:absolute;
+	left:104px;
+	top:838px;
+	width:190px;
+	height:3px;
+}
+
+div.Slice055_ {
+	position:absolute;
+	left:104px;
+	top:841px;
+	width:189px;
+	height:35px;
+}
+
+div.Slice056_ {
+	position:absolute;
+	left:293px;
+	top:841px;
+	width:1px;
+	height:213px;
+}
+
+div.Slice057_ {
+	position:absolute;
+	left:104px;
+	top:876px;
+	width:189px;
+	height:167px;
+        background-image:url(./../../images/Slice-57.png);
+        background-repeat:no-repeat;
+}
+
+div.Slice058_ {
+	position:absolute;
+	left:302px;
+	top:907px;
+	width:609px;
+	height:141px;
+	background-image:url(./../../images/Slice-58.png);
+	background-repeat:no-repeat;
+}
+
+div.Slice059_ {
+	position:absolute;
+	left:104px;
+	top:1043px;
+	width:189px;
+	height:11px;
+}
+
+div.Slice060_ {
+	position:absolute;
+	left:917px;
+	top:1043px;
+	width:189px;
+	height:11px;
+}
+
+div.Slice061_ {
+	position:absolute;
+	left:302px;
+	top:1048px;
+	width:609px;
+	height:6px;
+}
+
+div.Slice062_ {
+	position:absolute;
+	left:104px;
+	top:1054px;
+	width:1002px;
+	height:33px;
+        background-image:url(./../../images/Slice-62.png);
+        background-repeat:no-repeat;
+}
+
+div.Slice063_ {
+	position:absolute;
+	left:104px;
+	top:1087px;
+	width:1002px;
+	height:13px;
+}
