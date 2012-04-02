@@ -20,7 +20,7 @@ class Checky
     * Grabbing Xml from the file.
     *
     * @return string xml file.
-    * Testing ftw #4
+    * Testing ftw #5
     */
 
     private function getXml()
