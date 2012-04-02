@@ -16,7 +16,7 @@ class SkyPoints {
 	* Prints the first form, with options about the amount of points.
 	*
 	* @return string $output HTML Block of text
-	* Testing !
+	* Testing ! MooOoo
 	*/
 	
 	public function printForm()
