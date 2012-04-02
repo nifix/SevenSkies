@@ -12,6 +12,12 @@ class SkyPoints {
 
 	private $utils = null;
 
+	/**
+	* Prints the first form, with options about the amount of points.
+	*
+	* @return string $output HTML Block of text
+	*/
+	
 	public function printForm()
 	{
 		$output = '<h3>Buying Points !</h3>We have several options for you to buy points, for now they\'re all for paypal only, you 
