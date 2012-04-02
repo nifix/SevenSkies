@@ -11,6 +11,7 @@ namespace SevenSkies;
 
 class Ranking {
     
+
     private $utils = null;
     private $data = array();
     
@@ -19,6 +20,13 @@ class Ranking {
         $this->utils = new \SevenSkies\Utils();
     }
     
+    /**
+    * SQL Requests, depending on type requested.
+    *
+    * @param integer $type 
+    * @return data[] 
+    */
+
     private function gatherData($type)
     {
         
@@ -48,11 +56,27 @@ class Ranking {
         return $this->data;  
     }
     
+    /**
+    * Simple function to retrieve the string, from the id.
+    *
+    * @param integer $id ID Requested 
+    * @return string
+    */
+
     private function getType($id)
     {
         $types = array("0"=>"level","1"=>"PvP wins","2"=>"PvP loses","3"=>"PKs","4"=>"karma","5"=>"nickname");
         return $types[$id];
     }
+
+    /**
+    * Prints the desired ranking
+    *
+    * @param integer $type 
+    * @param integer $context
+    * @return string $output HTML 
+    */
+
     public function showRank($type,$context)
     {
         $rank = 1;
@@ -86,7 +110,14 @@ class Ranking {
         $output .= '</tbody></table>';
         return $output;
 	}
-    
+
+    /**
+    * Filter function for the ranking, BLACKLIST.
+    *
+    * @param string $acc 
+    * @return bool 
+    */   
+
     private function toIgnore($acc)
     {
         $accs = array("IKOLA","xndaleet","N1ghtmare","icon","landrel","newzaar","prime112486","noxi","D3v1lT00n","tgn1234");
@@ -94,13 +125,29 @@ class Ranking {
         else return false;
     }
 	
+    /**
+    * Filter function for the ranking, WHITELIST.
+    *
+    * @param string $ch
+    * @return bool 
+    */
+
 	private function whiteList($ch)
 	{
 		$chs = array("[GS]Skittles","[GS]Tichinde925");
 		if (in_array($ch,$chs)) return true;
 		else return false;
 	}
-    
+
+    /**
+    * Function to get the HTML correct html table
+    * depending on context
+    *
+    * @param integer $type 
+    * @param integer $context
+    * @return string $output
+    */
+
     private function getTable($type,$context)
     {
         if ($context == 0)
@@ -117,9 +164,7 @@ class Ranking {
             $output .= '<th scope="col"><a href="rankingpvp-3.ss">PKs</a></th><th scope="col"><a href="rankingpvp-4.ss">Karma</a></th></thead><tbody>';
         }
         return $output;
-    }
-    
-    
+    }   
 }
 
 ?>
