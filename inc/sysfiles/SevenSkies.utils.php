@@ -48,6 +48,13 @@ class Utils
         return (is_array($Q)) ? $Q : true;
     }
     
+    /**
+    * Function that strips all the special chars
+    *
+    * @param string $sString text to parse
+    * @return string $sString text parsed.
+    */
+    
     public function sStrip($sString)
     {
         $sChars = array(',',';','(',')','/','\\',']','[','+','=','^','<','>','&','"');

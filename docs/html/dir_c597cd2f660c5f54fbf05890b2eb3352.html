@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>SevenSkies: C:/SevenSkiesDev/inc/sysfiles/cfiles/cphome.php Source File</title>
+<title>SevenSkies: C:/SevenSkiesDev/inc/sysfiles/cfiles/ Directory Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -51,7 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="dirs.html"><span>Directories</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
@@ -70,12 +70,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -103,38 +97,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">cphome.php</div>  </div>
+<div class="title">cfiles Directory Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="cphome_8php.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
-<a name="l00002"></a>00002 require(<span class="stringliteral">&quot;./inc/sysfiles/SevenSkies.cp.php&quot;</span>);
-<a name="l00003"></a>00003 
-<a name="l00004"></a>00004 <span class="keywordflow">if</span> (!class_exists(<span class="stringliteral">&quot;utils&quot;</span>))
-<a name="l00005"></a>00005 {
-<a name="l00006"></a>00006     <a class="code" href="cnotify_8php.html#a40292103ee6377a334a82b9eff3b463e">$utils</a> = <span class="keyword">new</span> <a class="code" href="class_seven_skies_1_1_utils.html">SevenSkies\Utils</a>();
-<a name="l00007"></a>00007 }
-<a name="l00008"></a>00008 
-<a name="l00009"></a>00009 ob_start();
-<a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="keywordflow">if</span> (!<a class="code" href="cnotify_8php.html#a40292103ee6377a334a82b9eff3b463e">$utils</a>-&gt;isLogged())
-<a name="l00012"></a>00012 {
-<a name="l00013"></a>00013     echo <span class="stringliteral">&#39;&lt;div align=&quot;center&quot;&gt;You have to be logged in to access this page.&lt;/div&gt;&#39;</span>;
-<a name="l00014"></a>00014 } <span class="keywordflow">else</span> {
-<a name="l00015"></a>00015     $cp = <span class="keyword">new</span> <a class="code" href="class_seven_skies_1_1_control_panel.html">SevenSkies\ControlPanel</a>($_SESSION[<span class="stringliteral">&#39;UID&#39;</span>]);
-<a name="l00016"></a>00016     $cp-&gt;printData();
-<a name="l00017"></a>00017 }
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <a class="code" href="cranking_8php.html#aa11a63e49505f05d9b3d1171042bc82f">$tmp</a> = ob_get_contents();
-<a name="l00020"></a>00020 ob_end_clean();
-<a name="l00021"></a>00021 ?&gt;
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023 &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;ucpHeader&quot;</span>&gt;&lt;/div&gt;
-<a name="l00024"></a>00024 &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;mainContent&quot;</span>&gt;
-<a name="l00025"></a>00025     &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;content&quot;</span>&gt;
-<a name="l00026"></a>00026         &lt;div align=<span class="stringliteral">&quot;center&quot;</span>&gt;&lt;?php <span class="keywordflow">if</span> (!empty(<a class="code" href="cranking_8php.html#aa11a63e49505f05d9b3d1171042bc82f">$tmp</a>)) echo <a class="code" href="cranking_8php.html#aa11a63e49505f05d9b3d1171042bc82f">$tmp</a>; ?&gt;&lt;/div&gt; 
-<a name="l00027"></a>00027     &lt;/div&gt;
-<a name="l00028"></a>00028 &lt;/div&gt;
-</pre></div></div><!-- contents -->
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="files"></a>
+Files</h2></td></tr>
+<tr class="memitem:ccancel_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccancel_8php.html">ccancel.php</a> <a href="ccancel_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cchars_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cchars_8php.html">cchars.php</a> <a href="cchars_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cdownloads_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdownloads_8php.html">cdownloads.php</a> <a href="cdownloads_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cindex_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cindex_8php.html">cindex.php</a> <a href="cindex_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cmall_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmall_8php.html">cmall.php</a> <a href="cmall_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cmallbuy_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmallbuy_8php.html">cmallbuy.php</a> <a href="cmallbuy_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cnotify_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnotify_8php.html">cnotify.php</a> <a href="cnotify_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cpasswd_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpasswd_8php.html">cpasswd.php</a> <a href="cpasswd_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cphome_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cphome_8php.html">cphome.php</a> <a href="cphome_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cpoints_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpoints_8php.html">cpoints.php</a> <a href="cpoints_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cranking_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cranking_8php.html">cranking.php</a> <a href="cranking_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:cregister_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cregister_8php.html">cregister.php</a> <a href="cregister_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:csuccess_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csuccess_8php.html">csuccess.php</a> <a href="csuccess_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:uchecker_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uchecker_8php.html">uchecker.php</a> <a href="uchecker_8php_source.html">[code]</a></td></tr>
+<tr class="memitem:ulogin_8php"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ulogin_8php.html">ulogin.php</a> <a href="ulogin_8php_source.html">[code]</a></td></tr>
+</table>
+</div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
